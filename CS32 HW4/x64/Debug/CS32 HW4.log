@@ -1,0 +1,45 @@
+﻿  testSet.cpp
+C:\Users\xandn\source\repos\CS32 HW4\CS32 HW4\Set.h(38,1): error C2676: binary '==': 'ItemType' does not define this operator or a conversion to a type acceptable to the predefined operator
+          with
+          [
+              ItemType=Coord
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xstring(5101,17): message : could be 'bool std::operator ==(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)'
+C:\Users\xandn\source\repos\CS32 HW4\CS32 HW4\Set.h(38,1): error C2784: 'bool std::operator ==(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &)': could not deduce template argument for 'const _Elem *const ' from 'ItemType'
+          with
+          [
+              ItemType=Coord
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xstring(5101): message : see declaration of 'std::operator =='
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xstring(5082,30): message : or       'bool std::operator ==(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )'
+C:\Users\xandn\source\repos\CS32 HW4\CS32 HW4\Set.h(38,1): error C2784: 'bool std::operator ==(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const )': could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'ItemType'
+          with
+          [
+              ItemType=Coord
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xstring(5082): message : see declaration of 'std::operator =='
+C:\Users\xandn\source\repos\CS32 HW4\CS32 HW4\Set.h(38,1): error C2784: 'bool std::operator ==(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept': could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'ItemType'
+          with
+          [
+              ItemType=Coord
+          ]
+C:\Users\xandn\source\repos\CS32 HW4\CS32 HW4\Set.h(38,1): error C2784: 'bool std::operator ==(const std::allocator<_Ty> &,const std::allocator<_Other> &) noexcept': could not deduce template argument for 'const std::allocator<_Ty> &' from 'ItemType'
+          with
+          [
+              ItemType=Coord
+          ]
+C:\Users\xandn\source\repos\CS32 HW4\CS32 HW4\Set.h(38,1): error C2784: 'bool std::operator ==(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &)': could not deduce template argument for 'const std::move_iterator<_Iter> &' from 'ItemType'
+          with
+          [
+              ItemType=Coord
+          ]
+C:\Users\xandn\source\repos\CS32 HW4\CS32 HW4\Set.h(38,1): error C2784: 'bool std::operator ==(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &)': could not deduce template argument for 'const std::reverse_iterator<_BidIt> &' from 'ItemType'
+          with
+          [
+              ItemType=Coord
+          ]
+C:\Users\xandn\source\repos\CS32 HW4\CS32 HW4\Set.h(38,1): error C2784: 'bool std::operator ==(const std::pair<_Ty1,_Ty2> &,const std::pair<_Ty1,_Ty2> &)': could not deduce template argument for 'const std::pair<_Ty1,_Ty2> &' from 'ItemType'
+          with
+          [
+              ItemType=Coord
+          ]
