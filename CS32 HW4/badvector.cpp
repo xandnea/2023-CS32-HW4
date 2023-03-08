@@ -15,32 +15,32 @@
 //private:
 //	int m_rating;
 //};
-//
-////Implement the removeBad function; you must use vector's erase member function. Each Movie in the vector must have its rating examined no more than once.
-//
-//// Remove the movies in v with a rating below 50 and destroy them.
-//// It is acceptable if the order of the remaining movies is not
-//// the same as in the original vector.
-//void removeBad(vector<Movie*>& v)
-//{
-//	int size = v.size();
-//		
-//	for (int i = 0; i < size; i++) {
-//
-//		if (v.front()->rating() < 50) {
-//			delete v.front();
-//			v.erase(v.begin());
-//		}
-//		else {
-//			Movie* temp = new Movie(v.front()->rating());
-//			delete v.front();
-//			destroyedOnes.pop_back();
-//			v.erase(v.begin());
-//			v.push_back(temp);
-//		}
-//	}
-//}
-//
+
+//Implement the removeBad function; you must use vector's erase member function. Each Movie in the vector must have its rating examined no more than once.
+
+// Remove the movies in v with a rating below 50 and destroy them.
+// It is acceptable if the order of the remaining movies is not
+// the same as in the original vector.
+void removeBad(vector<Movie*>& v)
+{
+	int size = v.size();
+		
+	for (int i = 0; i < size; i++) {
+
+		if (v.front()->rating() < 50) {
+			delete v.front();
+			v.erase(v.begin());
+		}
+		else {
+			Movie* temp = new Movie(v.front()->rating());
+			delete v.front();
+			destroyedOnes.pop_back();
+			v.erase(v.begin());
+			v.push_back(temp);
+		}
+	}
+}
+
 //void test()
 //{
 //	int a[8] = { 85, 80, 30, 70, 20, 15, 90, 10 };

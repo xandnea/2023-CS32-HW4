@@ -16,29 +16,26 @@
 //private:
 //	int m_rating;
 //};
-//
-//// Remove the movies in li with a rating below 50 and destroy them.
-//// It is acceptable if the order of the remaining movies is not
-//// the same as in the original list.
-//void removeBad(list<Movie*>& li)
-//{
-//	int size = li.size();
-//	
-//	for (int i = 0; i < size; i++) {
-//		if (li.front()->rating() < 50) {
-//			delete li.front();
-//			li.pop_front();
-//		}
-//		else {
-//			Movie* temp = new Movie(li.front()->rating());
-//			delete li.front();
-//			destroyedOnes.pop_back();
-//			li.pop_front();
-//			li.push_back(temp);
-//		}
-//	}
-//}
-//
+
+void removeBad(list<Movie*>& li)
+{
+	int size = li.size();
+	
+	for (int i = 0; i < size; i++) {
+		if (li.front()->rating() < 50) {
+			delete li.front();
+			li.pop_front();
+		}
+		else {
+			Movie* temp = new Movie(li.front()->rating());
+			delete li.front();
+			destroyedOnes.pop_back();
+			li.pop_front();
+			li.push_back(temp);
+		}
+	}
+}
+
 //void test()
 //{
 //	int a[8] = { 85, 80, 30, 70, 20, 15, 90, 10 };

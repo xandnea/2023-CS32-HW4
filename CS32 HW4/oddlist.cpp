@@ -4,35 +4,35 @@
 //#include <iostream>
 //#include <cassert>
 //using namespace std;
-//
-////Implement the removeOdd function; you must use list's erase member function; you must not use lists's remove or remove_if member functions.
-////Each int in the list must be examined for oddness no more than once.
-//
-//// Remove the odd integers from li.
-//// It is acceptable if the order of the remaining even integers is not
-//// the same as in the original list.
-//void removeOdd(list<int>& li)
-//{
-//	list<int>::iterator it;
-//	it = li.begin();
-//
-//	int temp;
-//	int size = li.size();
-//
-//	for (int i = 0; i < size; i++) {
-//
-//		if (((*it) % 2) == 0) {
-//			temp = li.front();
-//			li.pop_front();
-//			li.push_back(temp);
-//			it = li.begin();
-//		} else {
-//			li.pop_front();
-//			it = li.begin();
-//		}
-//	}
-//}
-//
+
+//Implement the removeOdd function; you must use list's erase member function; you must not use lists's remove or remove_if member functions.
+//Each int in the list must be examined for oddness no more than once.
+
+// Remove the odd integers from li.
+// It is acceptable if the order of the remaining even integers is not
+// the same as in the original list.
+void removeOdd(list<int>& li)
+{
+	list<int>::iterator it;
+	it = li.begin();
+
+	int temp;
+	int size = li.size();
+
+	for (int i = 0; i < size; i++) {
+
+		if (((*it) % 2) == 0) {
+			temp = li.front();
+			li.pop_front();
+			li.push_back(temp);
+			it = li.begin();
+		} else {
+			li.pop_front();
+			it = li.begin();
+		}
+	}
+}
+
 //void test()
 //{
 //	int a[8] = { 2, 8, 5, 6, 7, 3, 4, 1 };

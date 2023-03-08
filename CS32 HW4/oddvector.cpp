@@ -3,30 +3,30 @@
 //#include <iostream>
 //#include <cassert>
 //using namespace std;
-//
-////Implement the removeOdd function; you must use vector's erase member function. Each int in the vector must be examined for oddness no more than once.
-//
-//// Remove the odd integers from v.
-//// It is acceptable if the order of the remaining even integers is not
-//// the same as in the original vector.
-//void removeOdd(vector<int>& v)
-//{
-//	int size = v.size();
-//	int temp;
-//
-//	for (int i = 0; i < size; i++) {
-//
-//		if ((v.front() % 2) == 0) {
-//			temp = v.front();
-//			v.erase(v.begin());
-//			v.push_back(temp);
-//		} else {
-//			v.erase(v.begin());
-//		}
-//		
-//	}
-//}
-//
+
+//Implement the removeOdd function; you must use vector's erase member function. Each int in the vector must be examined for oddness no more than once.
+
+// Remove the odd integers from v.
+// It is acceptable if the order of the remaining even integers is not
+// the same as in the original vector.
+void removeOdd(vector<int>& v)
+{
+	int size = v.size();
+	int temp;
+
+	for (int i = 0; i < size; i++) {
+
+		if ((v.front() % 2) == 0) {
+			temp = v.front();
+			v.erase(v.begin());
+			v.push_back(temp);
+		} else {
+			v.erase(v.begin());
+		}
+		
+	}
+}
+
 //void test()
 //{
 //	int a[8] = { 2, 8, 5, 6, 7, 3, 4, 1 };

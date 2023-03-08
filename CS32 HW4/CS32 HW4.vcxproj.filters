@@ -27,7 +27,10 @@
     <ClCompile Include="badvector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="testSet.cpp">
+    <ClCompile Include="sorts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
